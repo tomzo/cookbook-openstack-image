@@ -86,6 +86,7 @@ end
 
 service 'glance-registry' do
   service_name platform_options['image_registry_service']
+  provider Chef::Provider::Service::Upstart
   supports status: true, restart: true
 
   action :enable

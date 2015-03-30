@@ -80,6 +80,7 @@ end
 
 service 'glance-api' do
   service_name platform_options['image_api_service']
+  provider Chef::Provider::Service::Upstart
   supports status: true, restart: true
 
   action :enable
