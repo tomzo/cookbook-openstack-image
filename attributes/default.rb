@@ -69,6 +69,7 @@ default['openstack']['image']['registry']['workers'] = [8, node['cpu']['total'].
 
 # Return the URL that references where the data is stored on the backend.
 default['openstack']['image']['api']['show_image_direct_url'] = 'False'
+default['openstack']['image']['api']['show_multiple_locations'] = 'False'
 
 # Supported values for the 'container_format' image attribute
 default['openstack']['image']['api']['container_formats'] = %w(ami ari aki bare ovf ova)

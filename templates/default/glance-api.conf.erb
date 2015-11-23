@@ -74,6 +74,8 @@ workers = <%= node["openstack"]["image"]["api"]["workers"] %>
 #show_image_direct_url = False
 show_image_direct_url = <%= node["openstack"]["image"]["api"]["show_image_direct_url"] %>
 
+show_multiple_locations = <%= node['openstack']['image']['api']['show_multiple_locations'] %>
+
 # Send headers containing user and tenant information when making requests to
 # the v1 glance registry. This allows the registry to function as if a user is
 # authenticated without the need to authenticate a user itself using the
